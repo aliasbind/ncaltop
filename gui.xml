@@ -1,0 +1,41 @@
+<ui>
+	<menubar name="MainMenu">
+		<menu name="FileMenu" action="FileMenuAction">
+			<menuitem name="New" action="NewAction"/>
+			<menuitem name="Open" action="OpenAction"/>
+			<menuitem name="Save" action="SaveAction"/>
+			<menuitem name="SaveAs" action="SaveAsAction"/>
+			<separator/>
+			<menuitem name="Quit" action="QuitAction"/>
+			<placeholder name="FileMenuAdditions"/>
+		</menu>
+		<menu name="TableMenu" action="TableMenuAction">
+			<menuitem name="AddRow" action="AddRowAction"/>
+			<menuitem name="RemoveRow" action="RemoveRowAction"/>
+		</menu>
+	</menubar>
+
+	<toolbar name="MainToolbar" action="MainMenuBarAction">
+		<placeholder name="FileItems">
+			<separator/>
+			<toolitem name="New" action="NewAction"/>
+			<toolitem name="Open" action="OpenAction"/>
+			<toolitem name="Save" action="SaveAction"/>
+			<toolitem name="SaveAs" action="SaveAsAction"/>
+			<separator/>
+		</placeholder>
+
+		<placeholder name="ToolItems">
+			<separator/>
+			<toolitem name="AddRow" action="AddRowAction"/>
+			<toolitem name="RemoveRow" action="RemoveRowAction"/>
+			<separator/>
+		</placeholder>
+
+		<placeholder name="OrientationItem">
+			<separator/>
+			<toolitem name="GetOrientation" action="GetOrientationAction"/>
+			<separator/>
+		</placeholder>
+	</toolbar>
+</ui>
